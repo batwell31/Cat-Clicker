@@ -1,6 +1,8 @@
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
+    background: #7297ad;
+    color: #000;
 }
 
 img {
@@ -21,5 +23,3 @@ img {
 .byMe {
     float: right;
 }
-
-
