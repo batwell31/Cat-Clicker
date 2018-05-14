@@ -23,7 +23,7 @@ You can:
 To download the repository simply:
 * click "clone or download"
 * Copy the SSH key, or HTTPS
-* type git clone https://github.com/batwell31/Cat-Clicker.git
+* type git clone https://github.com/batwell31/Cat-Clicker.git (in your terminal)
 * open the project folder in your directory
 * drag index.html onto a browswer window
 * click the picture of my cat and see what happens!
