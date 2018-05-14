@@ -23,3 +23,13 @@ img {
 .byMe {
     float: right;
 }
+
+@media screen and (max-width: 391px) {
+    body {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .byMe {
+        float: none;
+    }
+}
