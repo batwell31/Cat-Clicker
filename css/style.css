@@ -6,6 +6,10 @@ body {
     color: #000;
 }
 
+div {
+    padding: 2px;
+}
+
 img {
     display: block;
     margin-left: auto;
