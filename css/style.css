@@ -65,7 +65,17 @@ a.navigation-link {
     }
     .byMe, .click {
         float: none;
-    }  
+    }
+    h1 {
+        display: none;
+    }
+    .colapse, .byMe {
+        display: none;
+    }
+    .click {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 392px) and (max-width: 991px) {
