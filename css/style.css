@@ -90,4 +90,7 @@ a.navigation-link {
     .imgDiv {
         height: 200px;
     }
+    .displayNone {
+        display: none;
+    }
 }
