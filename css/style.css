@@ -1,6 +1,7 @@
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 1.5em;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 1.8em;
+    line-height: 1.2em;
     background: #8ca3a3;
     color: #000;
 }
@@ -11,6 +12,10 @@ img {
     margin-right: auto;
     max-width: 100%;
     overflow:hidden
+}
+
+h1 {
+    font-size: 2em;
 }
 
 a.navigation-link {
@@ -34,11 +39,11 @@ a.navigation-link {
 }
 
 .byMe {
-    float: left;
+    text-align: center;
 }
 
 .click {
-    float: right;
+    text-align: center;
 }
 
 .myName {
