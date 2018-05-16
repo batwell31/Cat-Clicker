@@ -1,17 +1,24 @@
-var clickTracker = document.querySelector('#clickTracker');
+var danicasClickTracker = document.querySelector('#danicasClickTracker');
+var philipsClickTracker = document.querySelector('#philipsClickTracker');
 var danicaImg = document.querySelector('#danicaImg');
 var philipImg = document.querySelector('#philipImg');
-var clicks = 0;
+var danicasClicks = 0;
+var philipsClicks = 0;
 
-danicaImg.addEventListener('click', function(e) {
-    updateClicks();
+danicaImg.addEventListener('click', function (e) {
+    updateDanicasClicks();
 });
 
 philipImg.addEventListener('click', function (e) {
-    updateClicks();
+    updatePhilipsClicks();
 });
 
-function updateClicks() {
-    clicks++;
-    clickTracker.innerHTML = clicks;
+function updateDanicasClicks() {
+    danicasClicks++;
+    danicasClickTracker.innerHTML = danicasClicks;
+}
+
+function updatePhilipsClicks() {
+    philipsClicks++;
+    philipsClickTracker.innerHTML = philipsClicks;
 }
