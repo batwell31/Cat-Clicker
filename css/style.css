@@ -1,6 +1,6 @@
 body {
     font-family: "Lucida Console", Courier, monospace;
-    font-size: 1.8em;
+    font-size: 1.2em;
     line-height: 1.2em;
     background: #8ca3a3;
     color: #000;
@@ -8,6 +8,10 @@ body {
 
 div {
     padding: 2px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 img {
