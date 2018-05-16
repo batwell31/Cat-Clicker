@@ -10,9 +10,10 @@ https://batwell31.github.io/Cat-Clicker/
 
 I'm using bootstrap to make the website responsive.  I find it easier, and faster to get a fully responsive website.
 
-## The Img ##
+## The Imgs ##
 
-It is a picture I took of my cat Danica.
+* You will see a picture I took of my cat Danica, on my couch.
+* As well as a picture of my old roomates cat Philip, asleep on my computer desk.
 
 ## Instructions ##
 
