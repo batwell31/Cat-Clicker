@@ -60,7 +60,7 @@ a.navigation-link {
 
 @media screen and (max-width: 391px) {
     body {
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: center;
     }
     .byMe, .click {
@@ -75,6 +75,7 @@ a.navigation-link {
     .click {
         padding: 0;
         margin: 0;
+        font-size: 1.5em;
     }
 }
 
@@ -88,23 +89,29 @@ a.navigation-link {
     }
 }
 
-@media screen and (max-width:650px) and (orientation: landscape) {
+@media screen and (max-height:450px) and (orientation: landscape) {
     body {
         font-size: 14px;
     }
-    .byMe, .click {
-        float: none;
-    }
     img {
-        width: 45%;
+        width: 90%;
+    }
+    .imgDiv {
+        width: 50%;
+    }
+    
+    .click {
+        float: none;
+        font-size: 1.5em;
     }
     .center, .contactMe {
         font-size: 20px;
     }
-    .imgDiv {
-        height: 200px;
-    }
     .displayNone {
         display: none;
+    }
+    .links {
+        padding: 0;
+        margin: 0;
     }
 }
