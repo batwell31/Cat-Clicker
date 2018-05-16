@@ -42,7 +42,7 @@ a.navigation-link {
     color: #E50914;
 }
 
-.byMe {
+.list {
     text-align: center;
 }
 
@@ -63,13 +63,13 @@ a.navigation-link {
         font-size: 1em;
         text-align: center;
     }
-    .byMe, .click {
+    .list, .click {
         float: none;
     }
     h1 {
         display: none;
     }
-    .colapse, .byMe {
+    .colapse {
         display: none;
     }
     .click {
@@ -84,7 +84,7 @@ a.navigation-link {
         font-size: 1.4em;
         text-align: center;
     }
-    .byMe, .click {
+    .click {
         float: none;
     }
 }
@@ -100,7 +100,7 @@ a.navigation-link {
         width: 50%;
     }
     
-    .click {
+    .list, .click {
         float: none;
         font-size: 1.5em;
     }
