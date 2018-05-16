@@ -22,3 +22,5 @@ function updatePhilipsClicks() {
     philipsClicks++;
     philipsClickTracker.innerHTML = philipsClicks;
 }
+
+var catNames=['Briar-rose', 'Danica', 'Franklin', 'Harmony', 'Philip'];
