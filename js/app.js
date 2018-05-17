@@ -1,32 +1,36 @@
-var imgDiv = document.querySelector('#imgDiv'),
-    nameDiv = document.querySelector('#nameDiv'),
-    clickDiv = document.querySelector('#clickDiv'),
-    formDiv = document.querySelector('#formDiv');
+//re-usable function for a querySelector - given to me by my mentor 
+function qs(varName, selector) {
+    varName = document.querySelector(selector);
+    return varName;
+}
 
+// this function gets called when you press submit on the browser
 function makeSelection() {
-    for (var i = 0; i < document.myCats.cat.length; i++) {
-        if (document.myCats.cat[i].checked) {
+    const length = document.myCats.cat.length;    
+    
+    for (let i = 0; i < length; i++) {
+        const checked = document.myCats.cat[i].checked;
+
+        if (checked) {
             
-            // clears the content so only one cat can be visable at a time
-            nameDiv.innerHTML = '';
-            imgDiv.innerHTML = '';
-            clickDiv.innerHTML = '';
+            // targets the div elements and clears the content 
+            //so only one cat can be visable at a time
+            qs(nameDiv, '#nameDiv').innerHTML = '';
+            qs(imgDiv, '#imgDiv').innerHTML = '';
+            qs(clickDiv, '#clickDiv').innerHTML = '';
 
-            // variable to keep track and increment clicks for Total Clicks in the HTML
-            var catClicks = 0;
+            //this is the cat were on
+            const catName = document.myCats.cat[i].value;
 
-            //this is the cat were on...
-            var catName = document.myCats.cat[i].value;
-
-            var h2 = document.createElement('H2');
+            let h2 = document.createElement('H2');
             h2.className = 'name center';
             h2.textContent = catName;
-            nameDiv.appendChild(h2);
+            imgDiv.appendChild(h2);
 
             // setting all the alt texts for each cat in order in an array
-            var altText = ['a picture of briar-rose climbing up my body to see me', 'a picture of danica sitting on my blanket on my couch', 'a picture of franklin on the back patio at my aunts house', 'a picture of harmony licking water out of my fiances bathroom faucet', 'a picture of my old roomates cat taking a nap on my computer desk'];
+            const altText = ['a picture of briar-rose climbing up my body to see me', 'a picture of danica sitting on my blanket on my couch', 'a picture of franklin on the back patio at my aunts house', 'a picture of harmony licking water out of my fiances bathroom faucet', 'a picture of my old roomates cat taking a nap on my computer desk'];
 
-            var img = document.createElement('IMG');
+            let img = document.createElement('IMG');
             img.setAttribute("id", "cat-img");
             img.className = 'img-responsive catDiv';
             // sets a alt tag to the img from the array I have made.
@@ -35,25 +39,27 @@ function makeSelection() {
             img.src = 'img/' + catName + '.jpg';
             imgDiv.appendChild(img);
 
-            var paragraph = document.createElement('P');
+            let paragraph = document.createElement('p');
             paragraph.className = "click";
             paragraph.textContent = "Total Clicks: ";
-            //create span inside the paragraph
-            var span = document.createElement('SPAN');
+            let span = document.createElement('SPAN');
             span.setAttribute("id", "clickTracker");
             span.textContent = '';
             span.className = "clickFont"
-            // appends the span/paragraph elements to the clickDiv element
             paragraph.appendChild(span);
             clickDiv.appendChild(paragraph);
-
-            var catClickTracker = document.querySelector('#clickTracker');
+            
+            // variable to keep track and increment clicks for Total Clicks in the HTML
+            let clicks = 0;
+            
+            //targets the clickTracker element
+            qs(clickTracker, '#clickTracker');
             //sets an eventListener to the img you have selected
-            img.addEventListener('click', function (e) {
+            img.addEventListener('click', function() {
                 //increments cat clicks
-                catClicks++;
-                //changes the number of clicks to the html upon click
-                catClickTracker.innerHTML = catClicks;
+                clicks++;
+                //targets the clickTracker element and changes the number of clicks to the html upon click
+                clickTracker.innerHTML = clicks;
             });
         }
     }
