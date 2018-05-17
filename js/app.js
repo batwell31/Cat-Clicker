@@ -13,8 +13,7 @@ function makeSelection() {
 
         if (checked) {
             
-            // targets the div elements and clears the content 
-            //so only one cat can be visable at a time
+            // targtes the div elements and clears out the innerHTML
             qs(nameDiv, '#nameDiv').innerHTML = '';
             qs(imgDiv, '#imgDiv').innerHTML = '';
             qs(clickDiv, '#clickDiv').innerHTML = '';
@@ -51,15 +50,13 @@ function makeSelection() {
             
             // variable to keep track and increment clicks for Total Clicks in the HTML
             let clicks = 0;
-            
-            //targets the clickTracker element
-            qs(clickTracker, '#clickTracker');
+
             //sets an eventListener to the img you have selected
             img.addEventListener('click', function() {
                 //increments cat clicks
                 clicks++;
                 //targets the clickTracker element and changes the number of clicks to the html upon click
-                clickTracker.innerHTML = clicks;
+                qs(clickTracker, '#clickTracker').innerHTML = clicks;
             });
         }
     }
