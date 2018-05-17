@@ -1,6 +1,6 @@
-# Cat-Clicker
+# Cat-Clicker-Premium #
 
-This was a little mini-project given to me by Udacity.  It's a fully responsive, and if you click the picture of my cat you will notice the "Total Clicks" will increase.  It was a fun project as it was based off of everything I've learned so far.  I really had fun making this!
+This was a little mini-project given to me by Udacity.  It's a fully responsive, and if you click the picture of my cat you will notice the "Total Clicks" will increase.  It was a fun project as it was based off of everything I've learned so far.  I really had fun making this!  Currently it's on the premium version of the cat-clicker!  There are 5 cats you can choose between and click on!
 
 ## Live-Link ##
 
@@ -16,6 +16,13 @@ I'm using bootstrap to make the website responsive.  I find it easier, and faste
 * As well as a picture of my old roomates cat Philip, asleep on my computer desk.
 
 ## Instructions ##
+
+1) Select one of the cats (radio-button).
+2) Press Submit.
+3) Click the cat and watch the total click rise with each click!
+
+* You can change cats by picking a different cat, and hitting submit again.  That will erase all your cat clicking progress, so be warned :)
+
 
 You can:
 * Click the Live-Link above

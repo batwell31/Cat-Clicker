@@ -23,13 +23,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 list">
-                    <form id="form">
-                        <input id="briar-rose-radio" type="radio" name="cat" value="briar-rose"> Briar-rose
-                        <input id="danica-radio" type="radio" name="cat" value="danica" checked> Danica
-                        <input id="franklin-radio" type="radio" name="cat" value="franklin"> Franklin
-                        <input id="harmony-radio" type="radio" name="cat" value="harmony"> Harmony
-                        <input id="philip-radio" type="radio" name="cat" value="philip"> Philip
+                <div id="formDiv" class="col-lg-12 list">
+                    <form name="myCats">
+                    
+                        <input type="radio" name="cat" value="briar-rose" checked>briar-rose
+                        <input type="radio" name="cat" value="danica">danica
+                        <input type="radio" name="cat" value="franklin">franklin
+                        <input type="radio" name="cat" value="harmony">harmony
+                        <input type="radio" name="cat" value="philip">philip
+                        <br>
+                        <input type="button" name="submit" value="submit" onclick="makeSelection()">
                     </form>
                 </div>
             </div>
@@ -42,9 +45,7 @@
                 <div class="col-lg-12 imgContentDiv">
                     <div class="row">
                         <div id="nameDiv" class="col-lg-12">
-                            <h2 class="name center">
-                                
-                            </h2>
+
                         </div>
                     </div>                                        
                     <div class="row">
@@ -54,9 +55,7 @@
                     </div>
                     <div class="row">
                         <div id ="clickDiv" class="col-lg-12 clickDiv">
-                            <p class="click">
-                                <span id="ClickTracker"></span>
-                            </p>
+                            
                         </div>
                     </div>
                 </div>                
