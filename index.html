@@ -24,12 +24,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 list">
-                    <form>
-                        <input type="radio" name="cat" value="briar-rose" checked> Briar-rose
-                        <input type="radio" name="cat" value="danica"> Danica
-                        <input type="radio" name="cat" value="franklin"> Franklin
-                        <input type="radio" name="cat" value="harmony"> Harmony
-                        <input type="radio" name="cat" value="philip"> Philip
+                    <form id="form">
+                        <input id="briar-rose-radio" type="radio" name="cat" value="briar-rose"> Briar-rose
+                        <input id="danica-radio" type="radio" name="cat" value="danica" checked> Danica
+                        <input id="franklin-radio" type="radio" name="cat" value="franklin"> Franklin
+                        <input id="harmony-radio" type="radio" name="cat" value="harmony"> Harmony
+                        <input id="philip-radio" type="radio" name="cat" value="philip"> Philip
                     </form>
                 </div>
             </div>
@@ -41,22 +41,21 @@
             <div class="row">
                 <div class="col-lg-12 imgContentDiv">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="Danica center">
+                        <div id="nameDiv" class="col-lg-12">
+                            <h2 class="name center">
                                 
                             </h2>
                         </div>
                     </div>                                        
                     <div class="row">
-                        <div class="col-lg-12 imgDiv">
-                            <img id="danicaImg" class="img-responsive" srcset="img/danica_medium.jpg 1000w" sizes="(min-width: 1000px) 750px"
-                                src="img/danica_small.jpg" alt="A picture of my cat Danica sitting on a blanket on my couch.">
+                        <div id="imgDiv" class="col-lg-12 imgDiv">
+                            
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 clickDiv">
-                            <p class="click">Clicks:
-                                <span id="danicasClickTracker" class="clickFont">0</span>
+                        <div id ="clickDiv" class="col-lg-12 clickDiv">
+                            <p class="click">
+                                <span id="ClickTracker"></span>
                             </p>
                         </div>
                     </div>
