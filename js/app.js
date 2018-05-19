@@ -4,6 +4,9 @@ function qs(varName, selector) {
     return varName;
 }
 
+// an array of clicks so that each cat can have their own clicks!
+let clicks = [0, 0, 0, 0, 0];
+
 // this function gets called when you press submit on the browser
 function makeSelection() {
     const length = document.myCats.cat.length;    
@@ -43,20 +46,16 @@ function makeSelection() {
             paragraph.textContent = "Total Clicks: ";
             let span = document.createElement('span');
             span.setAttribute("id", "clickTracker");
-            span.textContent = '';
-            span.className = "clickFont"
+            span.innerHTML = clicks[i];
+            span.className = "clickFont";
             paragraph.appendChild(span);
             clickDiv.appendChild(paragraph);
-            
-            // variable to keep track and increment clicks for Total Clicks in the HTML
-            let clicks = 0;
 
-            //sets an eventListener to the img you have selected
+            // sets an eventListener to the img you have selected
             img.addEventListener('click', function() {
-                //increments cat clicks
-                clicks++;
-                //targets the clickTracker element and changes the number of clicks to the html upon click
-                qs(clickTracker, '#clickTracker').innerHTML = clicks;
+                // increments cat clicks for the cat were on
+                clicks[i]++;
+                qs(clickTracker, '#clickTracker').innerHTML = clicks[i];
             });
         }
     }
